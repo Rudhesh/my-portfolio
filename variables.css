@@ -98,24 +98,30 @@ body {
   overflow: auto;
 }
 
-.box .container-2 img {
+.box .container-2 section img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 400px;
+  width: 600px;
   margin: 5%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
   border-radius: 8px;
+  background: rgba(255, 255, 255, 0.897);
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
           box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
 }
 
-.box .container-2 img:first-child {
+.box .container-2 section img:first-child {
   margin-left: 10vw;
+}
+
+.box .container-2 .img-pc {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contact h2 {
@@ -174,6 +180,9 @@ footer p {
 footer img {
   width: 100px;
   height: 100px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
 }
 
 footer .fab {
