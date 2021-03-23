@@ -8,9 +8,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: red solid 2px;
 }
 
 .man {
@@ -35,6 +32,7 @@ body {
           flex-direction: column;
   margin: 0 auto;
   background-color: #73c69c;
+  padding: 10px;
   border-radius: 2px;
 }
 
@@ -120,6 +118,55 @@ body {
   margin-left: 10vw;
 }
 
+.contact h2 {
+  margin-top: 50px;
+  background-color: #73c69cda;
+  border-radius: 3px;
+  padding: .5rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  text-align: left;
+  background-color: #cef7e54b;
+  padding: 1.5rem;
+  border-radius: 3px;
+}
+
+form input, form textarea, form .submit-btn {
+  padding: .5rem;
+  border: 1px solid #73c69c;
+  border-radius: 3px;
+}
+
+form input:focus {
+  outline: none !important;
+  -webkit-box-shadow: 2px 2px 5px #73c69c;
+          box-shadow: 2px 2px 5px #73c69c;
+}
+
+form textarea:focus {
+  outline: none !important;
+  -webkit-box-shadow: 2px 2px 5px #73c69c;
+          box-shadow: 2px 2px 5px #73c69c;
+}
+
+form .submit-btn {
+  width: 10rem;
+  background: #73c69c;
+  color: white;
+}
+
+footer {
+  border-top: 2px solid #73c69c;
+}
+
 footer p {
   width: 500px;
 }
@@ -131,11 +178,5 @@ footer img {
 
 footer .fab {
   padding: 15px;
-}
-
-@media (max-width: 768px) {
-  .man {
-    display: none;
-  }
 }
 /*# sourceMappingURL=variables.css.map */

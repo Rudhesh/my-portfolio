@@ -2,7 +2,16 @@
  * Globals
  */
 
+ :root {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 /* Custom default button */
 .btn-secondary,
@@ -38,6 +47,13 @@ body {
   z-index: 44444;
   background-color: #212529;
 
+ 
+
+ }
+
+ .man-1 {
+
+  display: none;
  }
 
 .nav-masthead .nav-link {
@@ -64,7 +80,45 @@ body {
 
 .fab {
 
-    font-size: 50px;
-    padding-bottom: 0px;
+  font-size: 2rem;
 }
 
+
+@media (max-width: 768px) { 
+
+
+  header {
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 44444;
+    background-color: #212529;
+  
+   
+  
+   }
+
+  .man {
+
+    display: none;
+
+  }
+
+  .man-1 {
+
+    display: block;
+    position: absolute;
+    top: 0;
+   left: 3%;
+   
+    
+
+ }
+
+ .pc-image {
+
+display: none;
+
+ }
