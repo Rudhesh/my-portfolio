@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+$main-color:#212529;
+
+
+
+
+// card 2
+
+body {
+  overscroll-behavior-x: none;
+  scroll-behavior: smooth;
+  display: flex;
+  // height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  // overflow-x: scroll;
+  border: red solid 2px;
+
+}
+
+.man {
+
+  background: url(./image/man2.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+
+  border-bottom: #73c69c 3px solid;
+  height: 300px;
+  
+  .lead-1 {
+    box-sizing: border-box;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #73c69c;
+    
+    border-radius: 2px;
+    
+  }
+
+  .lead {
+    box-sizing: border-box;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #cef7e54b;
+    padding: 20px;
+    border-radius: 2px;
+    
+  }
+
+
+}
+
+
+.container {
+
+  img {
+
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+.box {
+
+
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+h3 {
+
+  color:white ;
+  background-color:#73c69cda ;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.container-2 {
+
+  background: #73c69cab;
+  border-radius: 3px;
+
+  
+
+
+
+ 
+
+  section {
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+    white-space: nowrap;
+    position: relative;
+    // height: 100%;
+    align-items: center;
+    overflow: auto;
+  }
+  
+  img {
+    transition: 0.3s;
+    width: 400px;
+    // height: 50vh;
+    margin: 5%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+  }
+  
+  img:first-child {
+    margin-left: 10vw;
+  }
+  
+
+}
+
+}
+footer {
+
+  p {
+
+    width: 500px;
+    
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .fab {
+
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) { 
+
+  .man {
+
+    display: none;
+  }
+ }
