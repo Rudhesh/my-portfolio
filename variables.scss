@@ -200,9 +200,18 @@ textarea:focus {
 
 footer {
   border-top: 2px solid $secondary-color;
+  display: flex;
+  flex-wrap: wrap;
+  
 
-  p {
-    width: 500px; 
+  .container-3 {
+
+    flex: 2;
+
+
+  p{
+
+   padding-left: 10px;
   }
 
   img {
@@ -212,8 +221,110 @@ footer {
     box-shadow: 1px 1px 5px black;
   }
 
-  .fab {
-    padding: 15px;
+  }
+
+$color-primary: #81c2de;
+$color-primary-light: #b4f5ff;
+$color-primary-dark: #4f92ac;
+
+$color-white: #FFFBFA;
+
+$color-black: #191308;
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 30px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  height: 80px;
+  background-color: $secondary-color;
+  // background-image: linear-gradient(to bottom right, rgba($color-primary,1),rgba($color-primary-dark,1));
+  transition: all .4s ease-out;
+  
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
   }
 }
 
+.social-link {
+
+  &--linkedin {
+    color: #2d76b0;
+  }
+
+  &--github {
+    color: #000;
+  }
+
+  &--instagram {
+    color: #9a2970;
+  }
+
+  &--dribbble {
+    color: #b53561;
+  }
+
+  & .social-svg {
+    width: 3.8rem;
+    height: 3.8rem;
+
+    & .social-group {
+
+      &__icon {
+        fill: $color-black;
+        transition: all .2s;
+      }
+
+      &__inner-circle {
+        fill: transparent;
+        transition: all .2s;
+      }
+
+      &__outline {
+        stroke: $color-black;
+        transform-origin: 50% 50%;
+        transition: all .2s;
+      }
+  
+  }
+
+  &:hover, &:active, &:focus {
+
+    & .social-group {
+
+      &__icon {
+        fill: $color-white;
+        transition: all .45s;
+      }
+
+      &__inner-circle {
+        fill: currentColor;
+        transition: all .45s;
+
+        &--instagram {
+          fill: url(#simpleInsta) !important;
+        }
+
+      }
+
+      &__outline {
+        stroke: currentColor;
+        transform: scale(1.1);
+        transition: all .45s;
+      }
+
+    } 
+
+  }
+
+  }
+
+}
+}
