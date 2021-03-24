@@ -3,21 +3,20 @@
 $main-color:#212529;
 $secondary-color:#73c69c;
 $complementary-color:#cef7e54b;
+$font-color:rgb(243, 243, 243);
 
 
-
-// card 2
 
 body {
-  overscroll-behavior-x: none;
-  scroll-behavior: smooth;
-  display: flex;
-  align-items: center;
+  // overscroll-behavior-x: none;
+  // scroll-behavior: smooth;
+  // display: flex;
+  // align-items: center;
   
 }
 
 
-
+// First box
 
 .man {
 
@@ -25,21 +24,18 @@ body {
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
-
   border-bottom: $secondary-color 3px solid;
   height: 300px;
   
   .lead-1 {
     box-sizing: border-box;
-    width: 60vw;
-    
+    width: 60vw; 
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     background-color: $secondary-color;
     padding: 10px;
-    border-radius: 2px;
-    
+    border-radius: 2px;  
   }
 
   .lead {
@@ -50,18 +46,15 @@ body {
     margin: 0 auto;
     background-color: #cef7e54b;
     padding: 20px;
-    border-radius: 2px;
-    
+    border-radius: 2px;  
   }
-
-
 }
 
+//My service box
 
 .container {
 
   img {
-
     width: 300px;
     height: 100px;
     object-fit: contain;
@@ -69,77 +62,81 @@ body {
 }
 
 .box {
-
-
   width: 90vw;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 
 h3 {
-
   color:white ;
-  background-color:#73c69cda ;
+  background-color: $secondary-color ;
   border-radius: 3px;
   font-weight: bold;
 }
-.container-2 {
 
-  background: #73c69cab;
+//feature inside box
+
+.container-2 {
+  // background: #73c69cab;
+  background: $complementary-color;
   border-radius: 3px;
 
+
+
+    
+    
   
-
-
-
- 
-
-  section {
-    width: 100%;
-    box-sizing: border-box;
-    transition: 0.3s;
-    white-space: nowrap;
-    position: relative;
-    // height: 100%;
-    align-items: center;
-    overflow: auto;
-  
-
   
   img {
-    transition: 0.3s;
-    width: 600px;
-    // height: 50vh;
-    margin: 5%;
-    object-fit: cover;
+    
+   
+    
     object-position: center;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.897);
-
     flex-shrink: 0;
-    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+
+
+    
   }
   
-  img:first-child {
-    margin-left: 10vw;
+  .card {
+
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+    margin: 5%;
+    transition: 0.3s;
+    background: #73c69cab;
+
   }
 
-}
+
 
   .img-pc {
 
-    // background: url(./image/pc-img.png);
-    // background-position: center;
-    // background-size: cover;
-    // height: 270px;
+    background: url(./image/pc-img.png);
+    background-position: center;
+    background-size: cover;
+    // height: 280px;
+   
     object-fit: cover;
-    // padding: 50px 80px 66px 80px ;
+    padding: 20px 60px 40px 60px ;
+    margin-top: 20px;
+
+    
   }
-  
+}
 
+.scrollable-container {
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s;
+  overflow-x: scroll;
 }
 
 }
+
+// second slide
+
+
+
 
 // Form
 
@@ -147,11 +144,10 @@ h3 {
 
 h2 {
  margin-top: 50px;
- background-color: #73c69cda;
+ background-color: $secondary-color;
  border-radius: 3px;
  padding: .5rem;
-}
- 
+} 
 }
 
 form {
@@ -182,28 +178,31 @@ textarea:focus {
 
   outline: none !important;
   box-shadow: 2px 2px 5px $secondary-color;
-
 }
 
 .submit-btn {
   width: 10rem; 
   background:  $secondary-color;
-  color: white;
-  
- 
+  color: white; 
+}
+
+.btn {
+  width: 10rem;
+  color: rgb(255, 255, 255);
+  background-color: $secondary-color;
+  background-image: none;
+  border-color: #7cc
 }
 
 }
+
+// footer
 
 footer {
-  
- 
   border-top: 2px solid $secondary-color;
 
   p {
-
-    width: 500px;
-    
+    width: 500px; 
   }
 
   img {
@@ -214,7 +213,6 @@ footer {
   }
 
   .fab {
-
     padding: 15px;
   }
 }

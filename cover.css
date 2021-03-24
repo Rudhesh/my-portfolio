@@ -3,7 +3,7 @@
  */
 
  :root {
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,37 +22,25 @@
 }
 
 
-/*
- * Base structure
- */
+/*Base structure*/
 
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-
-
-
-/*
- * Header
- */
+/* Header */
 
  header {
-
   position: sticky;
   top: 0;
   width: 100%;
   height: 70px;
   z-index: 44444;
   background-color: #212529;
-
- 
-
  }
 
  .man-1 {
-
   display: none;
  }
 
@@ -78,49 +66,43 @@ body {
   border-bottom-color: #fff;
 }
 
-.fab {
-
+.fab, .fas {
   font-size: 3rem;
 }
 
 
 @media (max-width: 768px) { 
 
-  
+  nav {   
+    margin-top: -22px;
+  }
+
+  .center {
+    margin-top: -10px;
+    padding-bottom: 13px;
+  }
 
 
   header {
-
     position: sticky;
     top: 0;
     width: 100%;
     height: 100px;
     z-index: 44444;
     background-color: #212529;
-  
-   
-  
    }
 
   .man {
-
-    display: none;
-
+  display: none;
   }
 
   .man-1 {
-
     display: block;
     position: absolute;
     top: 0;
    left: 3%;
-   
-    
-
  }
 
  .pc-image {
-
-display: none;
-
+ display: none;
  }

@@ -1,15 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Space+Mono");
-body {
-  overscroll-behavior-x: none;
-  scroll-behavior: smooth;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .man {
   background: url(./image/man2.png);
   background-repeat: no-repeat;
@@ -74,59 +63,54 @@ body {
 
 .box h3 {
   color: white;
-  background-color: #73c69cda;
+  background-color: #73c69c;
   border-radius: 3px;
   font-weight: bold;
 }
 
 .box .container-2 {
-  background: #73c69cab;
+  background: #cef7e54b;
   border-radius: 3px;
 }
 
-.box .container-2 section {
+.box .container-2 img {
+  -o-object-position: center;
+     object-position: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.box .container-2 .card {
+  -webkit-box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+  margin: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #73c69cab;
+}
+
+.box .container-2 .img-pc {
+  background: url(./image/pc-img.png);
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 20px 60px 40px 60px;
+  margin-top: 20px;
+}
+
+.box .scrollable-container {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  white-space: nowrap;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: auto;
-}
-
-.box .container-2 section img {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 600px;
-  margin: 5%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.897);
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
-}
-
-.box .container-2 section img:first-child {
-  margin-left: 10vw;
-}
-
-.box .container-2 .img-pc {
-  -o-object-fit: cover;
-     object-fit: cover;
+  overflow-x: scroll;
 }
 
 .contact h2 {
   margin-top: 50px;
-  background-color: #73c69cda;
+  background-color: #73c69c;
   border-radius: 3px;
   padding: .5rem;
 }
@@ -167,6 +151,14 @@ form .submit-btn {
   width: 10rem;
   background: #73c69c;
   color: white;
+}
+
+form .btn {
+  width: 10rem;
+  color: white;
+  background-color: #73c69c;
+  background-image: none;
+  border-color: #7cc;
 }
 
 footer {
