@@ -43,12 +43,13 @@ body {
 
 .text {
   color: #fff;
-  font-family: 'Roboto Condensed';
+  /* font-family: 'Roboto Condensed'; */
   font-size: 22px;
-  letter-spacing: 8px;
-  line-height: 32px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  /* line-height: 15px; */
   position: relative;
-  top: -48px;
+  top: -44px;
 }
 
 @keyframes draw {
@@ -60,7 +61,7 @@ body {
   100% {
     stroke-dasharray: 760;
     stroke-dashoffset: 0;
-    stroke-width: 2px;
+    stroke-width: 3px;
   }
 }
 
@@ -117,7 +118,7 @@ body {
 @media (max-width: 768px) { 
 
   nav {   
-    margin-top: -22px;
+    margin-top: -41px;
   }
 
   .center {
@@ -149,3 +150,4 @@ body {
  .pc-image {
  display: none;
  }
+}
