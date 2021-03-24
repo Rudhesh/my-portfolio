@@ -172,8 +172,8 @@ footer {
 
 footer .container-3 {
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 footer .container-3 p {
@@ -190,8 +190,8 @@ footer .container-3 img {
 
 footer .wrapper {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +205,7 @@ footer .wrapper {
   padding: 10px;
   border-radius: 5px;
   height: 80px;
-  background-color: #73c69c;
+  background-color: #f8f8f8;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
 }
@@ -240,8 +240,8 @@ footer .social-link--dribbble {
 }
 
 footer .social-link .social-svg {
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 footer .social-link .social-svg .social-group__icon {
