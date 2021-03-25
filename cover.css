@@ -149,4 +149,17 @@ body {
  .pc-image {
  display: none;
  }
+
+
+.dev{
+  margin: 5px;
+}
+.dev:hover { transform: scale(1.1);
+ box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+ padding-top: 20px;
+ box-sizing: border-box;
+ width: 50%;
+ border-radius: 4px;
+  }
+
 }

@@ -26,6 +26,71 @@ body {
   background-size: contain;
   border-bottom: $secondary-color 3px solid;
   height: 300px;
+
+  .swing {
+
+    transition:all 0.3s ease;
+  }
+
+  @-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+.swing:hover
+{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
   
   .lead-1 {
     box-sizing: border-box;
@@ -61,6 +126,21 @@ body {
     height: 100px;
     object-fit: contain;
   }
+}
+
+.dev { 
+  
+  transition: all .2s ease-in-out; 
+}
+
+
+.dev:hover { transform: scale(1.1);
+box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+// background-color: #cef7e521;
+padding-top: 20px;
+box-sizing: border-box;
+// width: 30%;
+border-radius: 8px;
 }
 
 .box {
