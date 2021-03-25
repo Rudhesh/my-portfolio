@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: left;
   background-size: contain;
-  border-bottom: #73c69c 3px solid;
+  border-bottom: #58be8b 3px solid;
   height: 300px;
 }
 
@@ -20,7 +20,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto;
-  background-color: #73c69c;
+  background-color: #58be8b;
   padding: 10px;
   border-radius: 2px;
 }
@@ -63,7 +63,7 @@
 
 .box h3 {
   color: white;
-  background-color: #73c69c;
+  background-color: #58be8b;
   border-radius: 3px;
   font-weight: bold;
 }
@@ -81,12 +81,22 @@
 }
 
 .box .container-2 .card {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.box .container-2 .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.box .container-2 .card {
   -webkit-box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
           box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
   margin: 5%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: #73c69cab;
+  background: #58be8b;
 }
 
 .box .container-2 .img-pc {
@@ -110,7 +120,7 @@
 
 .contact h2 {
   margin-top: 50px;
-  background-color: #73c69c;
+  background-color: #58be8b;
   border-radius: 3px;
   padding: .5rem;
 }
@@ -131,38 +141,38 @@ form {
 
 form input, form textarea, form .submit-btn {
   padding: .5rem;
-  border: 1px solid #73c69c;
+  border: 1px solid #58be8b;
   border-radius: 3px;
 }
 
 form input:focus {
   outline: none !important;
-  -webkit-box-shadow: 2px 2px 5px #73c69c;
-          box-shadow: 2px 2px 5px #73c69c;
+  -webkit-box-shadow: 2px 2px 5px #58be8b;
+          box-shadow: 2px 2px 5px #58be8b;
 }
 
 form textarea:focus {
   outline: none !important;
-  -webkit-box-shadow: 2px 2px 5px #73c69c;
-          box-shadow: 2px 2px 5px #73c69c;
+  -webkit-box-shadow: 2px 2px 5px #58be8b;
+          box-shadow: 2px 2px 5px #58be8b;
 }
 
 form .submit-btn {
   width: 10rem;
-  background: #73c69c;
+  background: #58be8b;
   color: white;
 }
 
 form .btn {
   width: 10rem;
   color: white;
-  background-color: #73c69c;
+  background-color: #58be8b;
   background-image: none;
   border-color: #7cc;
 }
 
 footer {
-  border-top: 2px solid #73c69c;
+  border-top: 2px solid #58be8b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
