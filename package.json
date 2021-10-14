@@ -15,5 +15,10 @@
     "url": "https://github.com/Rudhesh/my-portfolio/issues"
   },
   "homepage": "https://github.com/Rudhesh/my-portfolio#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
 }

@@ -76,15 +76,15 @@
 
 .man .lead-1 {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   background-color: #58be8b;
   padding: 10px;
@@ -93,15 +93,15 @@
 
 .man .lead {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 60vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   background-color: #cef7e54b;
   padding: 20px;
@@ -112,22 +112,23 @@
   width: 300px;
   height: 100px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .dev {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding-top: 30px;
 }
 
 .dev:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
-  padding-top: 20px;
+  /* -webkit-transform: scale(1.1);
+  transform: scale(1.1); */
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.185);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.185);
+  /* padding-top: 2px; */
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 8px;
 }
 
@@ -138,8 +139,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -157,24 +158,24 @@
 
 .box .container-2 img {
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .box .container-2 .card {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .box .container-2 .card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .box .container-2 .card {
   -webkit-box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
   margin: 5%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -186,7 +187,7 @@
   background-position: center;
   background-size: cover;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   padding: 20px 60px 40px 60px;
   margin-top: 20px;
 }
@@ -194,7 +195,7 @@
 .box .scrollable-container {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   overflow-x: scroll;
@@ -204,7 +205,7 @@
   margin-top: 50px;
   background-color: #58be8b;
   border-radius: 3px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 form {
@@ -213,16 +214,18 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
   text-align: left;
   background-color: #cef7e54b;
   padding: 1.5rem;
   border-radius: 3px;
 }
 
-form input, form textarea, form .submit-btn {
-  padding: .5rem;
+form input,
+form textarea,
+form .submit-btn {
+  padding: 0.5rem;
   border: 1px solid #58be8b;
   border-radius: 3px;
 }
@@ -230,13 +233,13 @@ form input, form textarea, form .submit-btn {
 form input:focus {
   outline: none !important;
   -webkit-box-shadow: 2px 2px 5px #58be8b;
-          box-shadow: 2px 2px 5px #58be8b;
+  box-shadow: 2px 2px 5px #58be8b;
 }
 
 form textarea:focus {
   outline: none !important;
   -webkit-box-shadow: 2px 2px 5px #58be8b;
-          box-shadow: 2px 2px 5px #58be8b;
+  box-shadow: 2px 2px 5px #58be8b;
 }
 
 form .submit-btn {
@@ -259,13 +262,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 footer .container-3 {
   -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
 }
 
 footer .container-3 p {
@@ -277,29 +280,29 @@ footer .container-3 img {
   height: 100px;
   border-radius: 3px;
   -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 5px black;
 }
 
 footer .wrapper {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 50%;
   margin: 30px 20px;
   padding: 10px;
   border-radius: 5px;
   height: 80px;
   background-color: #f8f8f8;
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 footer .wrapper__links {
@@ -307,11 +310,11 @@ footer .wrapper__links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 400px;
 }
 
@@ -338,45 +341,53 @@ footer .social-link .social-svg {
 
 footer .social-link .social-svg .social-group__icon {
   fill: #191308;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 footer .social-link .social-svg .social-group__inner-circle {
   fill: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 footer .social-link .social-svg .social-group__outline {
   stroke: #191308;
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-footer .social-link .social-svg:hover .social-group__icon, footer .social-link .social-svg:active .social-group__icon, footer .social-link .social-svg:focus .social-group__icon {
-  fill: #FFFBFA;
-  -webkit-transition: all .45s;
-  transition: all .45s;
+footer .social-link .social-svg:hover .social-group__icon,
+footer .social-link .social-svg:active .social-group__icon,
+footer .social-link .social-svg:focus .social-group__icon {
+  fill: #fffbfa;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 
-footer .social-link .social-svg:hover .social-group__inner-circle, footer .social-link .social-svg:active .social-group__inner-circle, footer .social-link .social-svg:focus .social-group__inner-circle {
+footer .social-link .social-svg:hover .social-group__inner-circle,
+footer .social-link .social-svg:active .social-group__inner-circle,
+footer .social-link .social-svg:focus .social-group__inner-circle {
   fill: currentColor;
-  -webkit-transition: all .45s;
-  transition: all .45s;
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 
-footer .social-link .social-svg:hover .social-group__inner-circle--instagram, footer .social-link .social-svg:active .social-group__inner-circle--instagram, footer .social-link .social-svg:focus .social-group__inner-circle--instagram {
+footer .social-link .social-svg:hover .social-group__inner-circle--instagram,
+footer .social-link .social-svg:active .social-group__inner-circle--instagram,
+footer .social-link .social-svg:focus .social-group__inner-circle--instagram {
   fill: url(#simpleInsta) !important;
 }
 
-footer .social-link .social-svg:hover .social-group__outline, footer .social-link .social-svg:active .social-group__outline, footer .social-link .social-svg:focus .social-group__outline {
+footer .social-link .social-svg:hover .social-group__outline,
+footer .social-link .social-svg:active .social-group__outline,
+footer .social-link .social-svg:focus .social-group__outline {
   stroke: currentColor;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all .45s;
-  transition: all .45s;
+  transform: scale(1.1);
+  -webkit-transition: all 0.45s;
+  transition: all 0.45s;
 }
 /*# sourceMappingURL=variables.css.map */
